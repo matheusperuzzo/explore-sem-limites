@@ -1,0 +1,185 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --wght-semi: 600;
+  --wght-bold: 700;
+  --wght-black: 900;
+
+  --color-magenta: #b52184;
+  --color-purple: #312d64;
+  --color-white: #ffffff;
+
+  --bg-gradient: linear-gradient(
+    90deg,
+    rgba(52, 49, 147, 1) 0%,
+    rgba(48, 44, 99, 1) 100%
+  );
+}
+
+body,
+input,
+textarea {
+  font-family: "Mulish", sans-serif;
+}
+
+#hero {
+  padding-bottom: 100px;
+}
+
+.hero {
+  width: 100%;
+}
+
+.welcome {
+  margin-top: 18px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 32px;
+  font-weight: var(--wght-black);
+  color: var(--color-magenta);
+  margin-bottom: 6px;
+}
+
+.welcome p {
+  font-size: 20px;
+  font-weight: var(--wght-semi);
+  color: var(--color-purple);
+  margin-bottom: 36px;
+}
+
+#motivations {
+  background: var(--bg-gradient);
+  padding: 52px 0;
+}
+
+#motivations img {
+  width: 80px;
+  margin-bottom: 32px;
+}
+
+#motivations h2 {
+  margin-bottom: 20px;
+  font-size: 28px;
+  font-weight: var(--wght-black);
+  color: var(--color-magenta);
+}
+
+#motivations p {
+  font-size: 16px;
+  font-weight: var(--wght-semi);
+  color: var(--color-purple);
+}
+
+#contact {
+  padding: 78px 0;
+}
+
+#contact h2 {
+  font-size: 32px;
+  font-weight: var(--wght-black);
+  color: var(--color-magenta);
+  margin-bottom: 42px;
+}
+
+#contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.form-control label {
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+}
+
+.form-control input,
+.form-control textarea {
+  width: 100%;
+  padding: 16px;
+  border: 1.5px solid #312d64;
+  border-radius: 0.6rem;
+  font-size: 16px;
+  font-weight: var(--wght-semi);
+  color: var(--color-purple);
+  outline: none;
+}
+
+.form-control input::placeholder,
+.form-control textarea::placeholder {
+  color: var(--color-purple);
+  opacity: 0.75;
+}
+
+.form-control input {
+  padding-left: 50px;
+}
+
+input#name {
+  background: url(assets/person.svg) no-repeat 14px;
+}
+
+input#email {
+  background: url(assets/at.svg) no-repeat 16px;
+}
+
+.form-control textarea {
+  padding: 12px 16px;
+  height: 126px;
+}
+
+button {
+  width: 152px;
+  height: 46px;
+  padding: 10px 16px;
+  border-radius: 16px;
+  border: none;
+  background: var(--bg-gradient);
+  color: var(--color-white);
+  font-weight: var(--wght-bold);
+  align-self: start;
+}
+
+footer {
+  height: 78px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  font-weight: var(--wght-semi);
+  color: var(--color-white);
+  background: var(--bg-gradient);
+}
+
+/* Utils */
+
+.card {
+  background: var(--color-white);
+  padding: 26px;
+  padding-right: 60px;
+  border-radius: 20px;
+}
+
+.container {
+  max-width: 364px;
+  margin: auto;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.gap-48 {
+  gap: 48px;
+}
